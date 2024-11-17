@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PlusJakartaSansVar";
+  src: url("./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url("./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf");
+}
+
+.notify.active{
+    @apply hidden;
+}
+
+.item {
+  @apply w-full p-2 flex justify-start items-start gap-4 text-d-g-blue mb-2 vrsm:mb-4  text-base  cursor-pointer;
+}
+
+img {
+  @apply w-10;
+}
+
+.name {
+  @apply font-bold text-v-d-blue;
+}
+
+.sign {
+  @apply font-[800] text-d-g-blue font-jakartaya;
+}
+
+.time {
+  @apply text-sm text-g-blue;
+}
+
+.club {
+  @apply font-bold text-primary-blue font-jakartaya;
+}
+
+/* new notification */
+.newOne {
+  @apply bg-v-l-g-blue rounded-sm;
+}
+
+.newOne.active {
+  @apply bg-white rounded-none;
+}
+
+.point-sign {
+  @apply after:relative
+     after:inline-block 
+     after:w-2 after:h-2
+     after:left-1
+      after:bg-primary-red 
+      after:rounded-full;
+}
+
+.point-sign.active {
+  @apply after:relative
+     after:inline-block 
+     after:w-0 after:h-0
+     after:left-1
+      after:bg-transparent
+      after:rounded-full;
+}
+
+/* Message */
+.lol {
+  @apply border-[1px] border-solid border-l-g-blue-2 p-3 rounded-md mt-1;
+}
